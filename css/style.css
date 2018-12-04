@@ -1,6 +1,12 @@
 body
 {margin: 0;}
 
+ul
+{list-style: none;display: flex;}
+
+a
+{text-decoration: none;color: inherit;}
+
 .fix
 {position: fixed;width: 100%;}
 
@@ -8,10 +14,21 @@ body
 {background: black;
 display: flex;
 align-items: center;
-padding: 16px;
+padding: 2px;
 justify-content: space-between;
+color: white;
+font-size: 120%;
 }
 
+
+.upperFix .right
+{margin-left: 8%;}
+
+.upperFix .left
+{margin-right: 8%;}
+
+.upperFix li
+{margin-right: 28px;}
 .lowerFix
 {
   width:100%;

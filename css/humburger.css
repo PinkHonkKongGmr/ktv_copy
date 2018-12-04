@@ -1,0 +1,56 @@
+.humburger {
+  display: flex;
+  flex-direction: column;
+  width: 31px;height: 31px;
+  position: absolute;
+  z-index: 50;
+  top: 19px;
+}
+
+
+.line {
+  width: 100%;
+  border-top: 3px solid #00aa52;
+  margin-bottom: 25%;
+  background: #00aa52;
+
+}
+
+
+.cross {
+  transform: rotate(45deg);
+  position: absolute;
+  top:14px;
+
+}
+
+.cross2 {
+  transform: rotate(-45deg);
+  position: absolute;
+  top:14px;
+}
+
+.hide
+{display: none;}
+
+.slidemenu
+{
+  position: absolute;
+  padding: 18px 30px 20px 25px;
+  background: black;
+  top:50px;
+  left: 70px;
+  font-size: 125%;
+  transform: matrix(0.1,0,0,0.1,-120,-120);
+  opacity: 0;
+  transition: .5s;
+
+}
+.slidemenu ul
+{flex-direction: column;}
+
+.slide ul li
+{margin-bottom: 18px;}
+
+.slideup
+{transform: scale(1,1);opacity: 1;transition:.5s; }
