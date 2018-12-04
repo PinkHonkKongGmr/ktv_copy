@@ -42,7 +42,8 @@
   left: 70px;
   font-size: 125%;
   transform: matrix(0.1,0,0,0.1,-120,-120);
-  opacity: 0;
+animation: fadeBack 2.1s linear;
+z-index: -5;
   transition: .5s;
 
 }
@@ -53,4 +54,31 @@
 {margin-bottom: 18px;}
 
 .slideup
-{transform: scale(1,1);opacity: 1;transition:.5s; }
+{transform: scale(1,1);transition:.5s;animation: fadeInFromNone 1.3s ease;}
+
+
+
+
+
+
+@-webkit-keyframes fadeInFromNone {
+
+    1% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeBack {
+
+
+    100% {
+
+        opacity: 0;
+    }
+}

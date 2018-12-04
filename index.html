@@ -7,6 +7,9 @@
   <title>Поиск билетов</title>
   <link rel='stylesheet' href='css/style.css'>
 <link rel='stylesheet' href='css/humburger.css'>
+<link rel='stylesheet' href='css/slider.css'>
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+   <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
 
 </head>
 
@@ -78,18 +81,9 @@
       <a href="#">Помощь</a>
     </li>
   </ul>
-
-
-
-
-
-
-
-
 </div>
 
   </div>
-
 
 
 
@@ -97,17 +91,18 @@
 
 <div class="lowerFix">
 
-<div class="right">
+<div class="right resize">
 
-<div class="">
-    <img src="img/logo150.jpg" alt="none" class="resize">
+<div class="imgbox ">
+    <img src="img/logo150.jpg" alt="none">
 </div>
 
-<div class="forWho resize">
+<div class="forWho">
 <p>  Для частных лиц<br>
 ЖСК и ТСЖ</p>
-</div>
 
+</div>
+<i class="icon-RightArrow"></i>
 </div>
 
 <div class="icons">
@@ -130,10 +125,131 @@
 </div>
 
 
+<div class="slider">
+    <ul id="slider">
 
+      <li>
+
+            <div class="extender main_coutisel_slide1 img_box">
+
+        </div>
+      </li>
+
+      <li>
+        <div class="slider__item">
+          <div class="img_box">
+            <div class="extender main_coutisel_slide2 img_box">
+            </div>
+           </div>
+          <div class="slider_information">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                  <div class="slider__item-title">ЕСТЬ ТАКАЯ ПРОФЕССИЯ - ДАРИТЬ СЧАСТЬЕ МАТЕРИНСТВА!</div>
+
+
+                  <div class="slider__item-description">
+                    <p><span style="font-size: 120%;">Консультация </span></p>
+                    <p> </p>
+                    <p>главного акушера-гинеколога</p>
+                    <p>Минздрава России Адамян Л. В. </p>
+                    <p><strong> </strong></p>
+                  </div>
+
+
+                  <div class="slider__item-button">
+                    <a href="" class="button" data-fancybox="" data-src="#callback">записаться на приём</a>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+
+
+
+
+    </ul>
+    <div class="slider__controls--prev slider__controls" id="slider__prev"></div>
+    <div class="slider__controls--next slider__controls" id="slider__next"></div>
+  </div>
+
+<script src="js\jquery.min.js"></script>
+<script src="js\jquery.fancybox.min.js"></script>
+<script src="js\jquery.bxslider.min.js"></script>
   <script src="js\script.js"></script>
   <script src="js\humburger.js"></script>
   <script src="https://use.fontawesome.com/550105d68c.js"></script>
+
+
+  <script>
+
+
+  $('#reviews').bxSlider({
+    infiniteLoop: false,
+    slideWidth: 780,
+    slideMargin: 30,
+    minSlides: 1,
+    maxSlides: 2,
+    moveSlides: 1,
+    controls: false,
+    shrinkItems: true,
+    pager: true,
+    auto: false
+  });
+
+  if ($(window).width() <= '600') {
+    $('#specialists').bxSlider({
+      auto: false,
+      autoStart: true,
+      slideWidth: 320,
+      minSlides: 1,
+      maxSlides: 5,
+      moveSlides: 1,
+      controls: false,
+      pager: false,
+      shrinkItems: true,
+    });
+  } else {
+    $('#specialists').bxSlider({
+      auto: true,
+      autoStart: true,
+      slideWidth: 320,
+      minSlides: 1,
+      maxSlides: 5,
+      moveSlides: 1,
+      controls: true,
+      pager: true,
+      shrinkItems: true,
+    });
+  }
+
+
+
+
+  var slider = $('#slider').bxSlider({
+
+    controls: false,
+    pager: false,
+    auto: true,
+    pause: 7000
+  });
+  $('#slider__next').click(function() {
+    slider.goToNextSlide();
+    return false;
+  });
+  $('#slider__prev').click(function() {
+    slider.goToPrevSlide();
+    return false;
+  });
+</script>
 </body>
 
 </html>

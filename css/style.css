@@ -8,7 +8,8 @@ a
 {text-decoration: none;color: inherit;}
 
 .fix
-{position: fixed;width: 100%;}
+{position: fixed;width: 100%;z-index: 5;top:0
+}
 
 .upperFix
 {background: black;
@@ -31,11 +32,12 @@ font-size: 120%;
 {margin-right: 28px;}
 .lowerFix
 {
+  font-size: 123%;
   width:100%;
   box-sizing: border-box;
-  height:140px;
+  height:190px;
   background: pink;
-
+margin-top: 50px;
 display: flex;
 justify-content: space-between;
 padding: 13px;
@@ -47,20 +49,24 @@ padding: 13px;
 transform:scale(0.7,0.7);
 }
 
-
+.forWho
+{margin-right: 9px;}
 
 .lowerFix img
 {height:90%;width: auto;}
 
 
 .lowerFix .right
-{display: flex;justify-content: space-between;width: 200px;}
+{display: flex;justify-content: space-between;width: auto;margin-left: 10%;}
+
+.imgbox
+{margin-right: 25px}
 
 .icons
-{display: flex;}
+{display: flex;padding-top: 15px;margin-right: 9%;}
 
 .icons_items
-{margin-right: 45px;text-align: center;}
+{margin-right: 30px;text-align: center;}
 
 .custom-icon
 {
@@ -90,3 +96,7 @@ background-position: -233px -1px;
 {
 background-position: -532px -1px;
 }
+
+.icon-RightArrow
+{background-image: url(../img/sprite.png);
+display: block;width: 50px;height: 180px;background-repeat: no-repeat;background-position:15px 20px;}
