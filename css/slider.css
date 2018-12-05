@@ -1,22 +1,18 @@
-
-.img_box
-{position: absolute;
-  top:0;
-height: 100%;width: 100%;}
-
-.extender
-{height: 100%;width: 100%;background-repeat: no-repeat; z-index: -50;}
-
-.slider_information
-{position: relative;
-z-index: 10;}
-
-
-
-.main_coutisel_slide1 {
-  background-image: url('../img/slider1.jpg');
+.bx-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.main_coutisel_slide2 {
-  background-image: url('../img/slider2.jpg');
+.slider {
+  margin: 0;
+  padding: 0;
 }
+
+
+
+.bx-wrapper, .bx-next {
+    background: url(../img/sprite.png) no-repeat !important;
+}
+.bx-wrapper .bx-controls-direction a
+{height: 90px;}

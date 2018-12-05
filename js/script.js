@@ -1,19 +1,19 @@
-var lowerFix=document.querySelector('.lowerFix');
+var lowerFix = document.querySelector('.lowerFix');
 var resize = document.querySelectorAll('.resize');
 
 
-var smaller =[]
+var smaller = []
 
 console.log(smaller);
 for (let r of resize) {
-smaller.push(r);
+  smaller.push(r);
 }
 
 
-lowerFix.onclick= function () {
+lowerFix.onclick = function() {
 
-for (var small of smaller) {
+  for (var small of smaller) {
 
-            small.classList.toggle('pop');
-    }
-   }
+    small.classList.toggle('pop');
+  }
+}
