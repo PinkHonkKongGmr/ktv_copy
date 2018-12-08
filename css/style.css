@@ -130,16 +130,19 @@ a {
   background-position: 15px 20px;}
 
   .special_offers
-  {display: flex; width: 82%; margin: auto;height: 600px;justify-content: space-between;padding-top: 16px;position: relative;z-index: -3;}
+  {display: flex; width: 82%; margin: auto;height: 600px;justify-content: space-between;padding-top: 16px;position: relative;}
 
   .special_offers_item
-  {width: 32.5%;background: #ffffff;padding: 22px;box-sizing: border-box;display: flex;flex-direction: column;}
+  {width: 32.5%;background: #ffffff;padding: 22px;box-sizing: border-box;}
 
 .special_offers_item img
-{margin: auto;display: block;position: relative;}
+{margin: auto;display: block;}
 
 .hitBox
 {position: relative;overflow: hidden;}
+
+.offer_subcribe
+{position: absolute;flex-wrap: wrap;bottom: 0;display: flex;width: inherit;}
 
 .hit
 {background: #ef3125;
