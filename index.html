@@ -18,7 +18,8 @@
       $('.slider').bxSlider({
         auto: true,
         pager: false,
-        nextSelector:$('.next')
+        nextSelector:$('.next'),
+        prevSelector:$('.prev')
 
       });
     });
@@ -28,6 +29,7 @@
 
 
 <body>
+
   <div class="fix">
 
     <div class="upperFix">
@@ -130,17 +132,40 @@
 
 <div class="slider_wrapper">
   <ul class="slider">
-    <li><img src="img/slider1.jpg" alt="none"></li>
-    <li><img src="img/slider2.jpg" alt="none"></li>
+    <li class="family"></li>
+    <li class="hamak"></li>
   </ul>
 
      <div class="slider_control prevC"><a class="prev"></a></div>
     <div class="slider_control nextC"><a class="next"></a></div>
-
-
+<div class="slider_bottom">
+</div>
 </div>
 
+<div class="special_offers">
 
+  <div class="special_offers_item hitBox">
+
+    <img src="img/people02.jpg" alt="">
+    <div class="hit">
+      Хит
+    </div>
+
+  </div>
+
+  <div class="special_offers_item">
+
+    <img src="img/people03.jpg" alt="">
+
+  </div>
+
+  <div class="special_offers_item">
+
+    <img src="img/people01.jpg" alt="">
+
+  </div>
+
+</div>
 
   <script src="js\script.js"></script>
   <script src="js\humburger.js"></script>

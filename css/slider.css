@@ -1,5 +1,4 @@
-body
-{background: grey;}
+
 
 .bx-wrapper {
   border: none;
@@ -25,6 +24,18 @@ body
 .prevC
 {left:0}
 
+.slider li
+{height: 910px;}
+
+.family
+{
+  background-image: url(../img/slider1.jpg);
+}
+
+.hamak
+{
+background-image: url(../img/slider2.jpg);
+}
 
 .nextC:hover
 {background: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);opacity: 1;}
@@ -32,7 +43,13 @@ body
 .prevC:hover
 {background: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);opacity: 1;}
 .slider_control a
-{width:60px;height:100%;background: url(../img/sprite.png)  no-repeat;display: block;background-position:40px 50%;}
+{width:60px;height:100%;display: block;}
 
-.prevC
-{background: url(../img/arrow-slide-left.png)}
+.slider_control .next
+{background: url(../img/arrow-slide-right.png) no-repeat; background-position: 30px 50%;}
+
+.slider_control .prev
+{background: url(../img/arrow-slide-left.png) no-repeat;background-position: 30px 50%;}
+
+.slider_bottom
+{position: absolute;bottom: 0;width: 100%;background: rgba(255, 255, 255, 0.15) url(../img/arrow-slide-bottom.png) center no-repeat;height: 120px;}
