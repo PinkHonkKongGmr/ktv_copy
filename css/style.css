@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 body {
   margin: 0;
   background: #e1e1e1;
+  font-family: 'Noto Serif TC', serif;
 }
 
 ul {
@@ -47,7 +50,6 @@ a {
   width: 100%;
   box-sizing: border-box;
   height: 190px;
-
   display: flex;
   justify-content: space-between;
   padding: 13px;
@@ -121,31 +123,184 @@ a {
   background-repeat: no-repeat;
   background-position: 15px 20px;
 }
-.test i
-{  background-image: url(../img/sprite.png);
+
+.test i {
+  background-image: url(../img/sprite.png);
   display: block;
   width: 50px;
   height: 60px;
   background-repeat: no-repeat;
-  background-position: 15px 20px;}
+  background-position: 15px 20px;
+}
 
-  .special_offers
-  {display: flex; width: 82%; margin: auto;height: 600px;justify-content: space-between;padding-top: 16px;position: relative;}
+.special_offers {
+  display: flex;
+  width: 82%;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 16px;
+  position: relative;
+}
 
-  .special_offers_item
-  {width: 32.5%;background: #ffffff;padding: 22px;box-sizing: border-box;}
+.special_offers_item {
+  width: 32.5%;
+  min-height: 700px;
+  background: #ffffff;
+  position: relative;
+  padding-top: 28px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
 
-.special_offers_item img
-{margin: auto;display: block;}
+.special_offers_item>* {
+  width: 85%;
+  margin: auto;
+  font-size: 120%;
+  line-height: 1.6;
+  color: #000;
+}
 
-.hitBox
-{position: relative;overflow: hidden;}
+.special_offers_item h2 {
+  font-size: 140%;
+  margin-bottom: 3px;
+  color: black;
+}
 
-.offer_subcribe
-{position: absolute;flex-wrap: wrap;bottom: 0;display: flex;width: inherit;}
+.special_offers_item h3 {
+  font-weight: lighter;
+  font-size: 140%;
+  margin-bottom: 18px;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+}
 
-.hit
-{background: #ef3125;
-position: absolute;
-width: 200px;
-transform: rotate(-45deg);height: 50px;text-align: center;top:26px;left:-46px;line-height: 50px;font-size: 120%; color: white;}
+.special_offers_item h3 span {
+  color: #ff3333;
+}
+
+.special_offers_item h3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+  height: 1px;
+  background: #000;
+}
+
+.special_offers_item img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.hitBox {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer_subcribe {
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.hit {
+  background: #ef3125;
+  position: absolute;
+  width: 200px;
+  transform: rotate(-45deg);
+  height: 50px;
+  text-align: center;
+  top: 26px;
+  left: -46px;
+  line-height: 50px;
+  font-size: 120%;
+  color: white;
+}
+
+.offer_subcribe span {
+  width: 85%;
+  margin: auto;
+  font-size: 80%;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+.offer_subcribe button {
+  width: 85%;
+  background: inherit;
+  border-radius: 5px;
+  border: 1px solid rgba(125, 127, 125, 0.5);
+  margin: auto;
+  padding: 11px;
+  font-size: 130%;
+  font-weight: lighter;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.offer_subcribe button:hover {
+  border: 1px solid rgba(255, 0, 51, 1);
+  color: rgba(255, 0, 51, 1);
+}
+
+.lozung {
+  background-image: url(../img/tv-bg-blur.jpg);
+}
+
+.lozung_wrapper {
+  padding-top: 110px;
+  text-align: center;
+  color: white;
+}
+
+.lozung_wrapper h2 {
+  display: inline-block;
+  font-size: 350%;
+  font-weight: 100;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.6);
+  border-radius: 2px;
+  margin: 8px;
+}
+
+.lozung_wrapper h4 {
+  font-size: 150%;
+  margin-bottom: 5px;
+}
+
+.lozung_wrapper h3 {
+  font-size: 280%;
+  margin-top: 0;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.lozung_wrapper h3::after {
+  content: '';
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background: white;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.lozung_wrapper h3:hover:after {
+  display: block;
+}
+
+.lozung_wrapper button {
+  margin: auto;
+  padding: 19px 102px;
+  background: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 130%;
+  margin-top: 0;
+  margin-bottom: 18px;
+}

@@ -1,84 +1,75 @@
 .humburger {
   display: flex;
   flex-direction: column;
-  width: 31px;height: 31px;
+  width: 31px;
+  height: 31px;
   position: absolute;
   z-index: 50;
   top: 19px;
 }
-
 
 .line {
   width: 100%;
   border-top: 3px solid #00aa52;
   margin-bottom: 25%;
   background: #00aa52;
-
 }
-
 
 .cross {
   transform: rotate(45deg);
   position: absolute;
-  top:14px;
-background: green;
+  top: 14px;
+  background: green;
 }
 
 .cross2 {
   transform: rotate(-45deg);
   position: absolute;
-  top:14px;
+  top: 14px;
 }
 
-.hide
-{display: none;}
+.hide {
+  display: none;
+}
 
-.slidemenu
-{
+.slidemenu {
   position: absolute;
   padding: 18px 30px 20px 25px;
   background: black;
-  top:50px;
+  top: 50px;
   left: 70px;
   font-size: 125%;
-  transform: matrix(0.1,0,0,0.1,-120,-120);
-animation: fadeBack 2.1s linear;
-z-index: -5;
+  transform: matrix(0.1, 0, 0, 0.1, -128, -128);
+  animation: fadeBack 2.1s linear;
+  z-index: -5;
   transition: .5s;
-
 }
-.slidemenu ul
-{flex-direction: column;}
 
-.slide ul li
-{margin-bottom: 18px;}
+.slidemenu ul {
+  flex-direction: column;
+}
 
-.slideup
-{transform: scale(1,1);transition:.5s;animation: fadeInFromNone 1.3s ease;}
+.slide ul li {
+  margin-bottom: 18px;
+}
 
-
-
-
-
+.slideup {
+  transform: scale(1, 1);
+  transition: .5s;
+  animation: fadeInFromNone 1.3s ease;
+}
 
 @-webkit-keyframes fadeInFromNone {
-
-    1% {
-
-        opacity: 0;
-    }
-
-    100% {
-
-        opacity: 1;
-    }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeBack {
-
-
-    100% {
-
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
