@@ -53,3 +53,44 @@ background-image: url(../img/slider2.jpg);
 
 .slider_bottom
 {position: absolute;bottom: 0;width: 100%;background: rgba(255, 255, 255, 0.15) url(../img/arrow-slide-bottom.png) center no-repeat;height: 120px;}
+
+
+.recomendation_slider_wrapper
+{
+  position: relative;
+  background-image: url(../img/rand-bg02.jpg );
+
+}
+.recomend-slide, .controlWrapper
+{
+
+width: 900px;
+margin: auto;
+
+}
+
+.recomends
+{
+  position: relative;
+}
+.recomends img
+{width:900px;}
+
+.controlWrapper
+{position: relative;}
+
+.description
+{padding: 13px;
+position: absolute;
+width:100%;
+align-items: center;
+background: rgba(23,24,21,0.6);
+bottom: 20px;
+display: flex;
+}
+
+.name, .channel
+{width: 50%;color:rgba(245,245,248,0.8);padding: 8px;}
+
+.name
+{border-right: 1px solid white;font-weight: bolder;font-size: 105%;display: flex;justify-content: flex-end;align-items: center;}

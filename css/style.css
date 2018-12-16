@@ -248,6 +248,7 @@ a {
 
 .lozung {
   background-image: url(../img/tv-bg-blur.jpg);
+  background-size: cover;
 }
 
 .lozung_wrapper {
@@ -304,3 +305,6 @@ a {
   margin-top: 0;
   margin-bottom: 18px;
 }
+
+.optionStripe
+{width:50.5%;text-align: right;padding: 9px;background: #ef3125;color: #e1e1e1;font-size: 120%;border-bottom: 3px solid #ef3125;}
