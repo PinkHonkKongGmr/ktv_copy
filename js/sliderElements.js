@@ -15,6 +15,28 @@ $(document).ready(function() {
    prevArrow:$('.prev1'),
    nextArrow:$('.next1')
   });
-
-
 });
+
+
+var recSlidesLi = $('.recMenu li');
+
+// for (rec of recSlidesLi) {
+//
+//   $(this).onclick=function () {
+//
+//     console.log('hhd');
+//
+//     if($(this).hasClass('activeLi'))
+//     {console.log('yes');}
+//
+//   }
+//
+// }
+
+recSlidesLi.each(){
+    function () {
+  $(this).onclick=function () {
+    console.log('aaa');
+  }
+ }
+}
